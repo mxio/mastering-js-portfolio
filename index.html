@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mai Xiong</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="screen.css" media="screen">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Quicksand:300,400,500,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+	<nav>
+		<div class="container">
+		<span class="logo">MXIO</span>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--About-->
+	<header id="about">
+		<div class="container">
+			<h1>I'M MAI XIONG</h1>
+			<div class="box">
+				<h2>I am a front-end developer. I like building and creating things. Coding's just one of them. Let's work together!</h2>
+			</div>
+		</div>
+	</header>
+	<!--Projects-->
+	<section id="projects" class="container">
+		<h3>Projects</h3>
+		<p class="subtitle">This website is designed by me with a bit of inspiration from a design provided by Bov Academy. The functionality is built entirely by me using HTML, CSS, Flexbox and Javascript without the use of existing frameworks or libraries. This website is responsive too. Change the browser size to see it in effect.</p>
+		<p class="subtitle">Below are projects I built as course work in Bov Academy. There is a demo of each project in the last slide of each tab.</p>
+		
+		<div class="accordion-wrapper">
+  			<div class="proj-accordion">
+				<div class="tab">
+      				<label id="1" class="portfolio">Login Form</label>
+      				<label id="2" class="portfolio">Calculator</label>
+      				<label id="3" class="portfolio">Shopping Cart</label>
+      				<label id="4" class="portfolio">Tab</label>
+      				<label id="5" class="portfolio">Accordion</label>
+      				<label id="6" class="portfolio">Image Carousel</label>
+   			 	</div>
+	     
+	      		<label id="1" class="mobile">Login Form</label>
+	      		<section data-num="1" class="tab-content">
+	        		<div class="slider-wrapper">
+  						<div class="slider">
+			    			<!--Slide 1: Image-->
+			    			<div class="proj1slide active" id="slide-1">
+				    			<div class="img">
+					      			<img src="images/login-form.png" class="active">
+					      		</div>
+				      		</div>
+						    <!--Slide 2: Demo-->
+						    <div class="proj1slide" id="slide-2">
+							    <div class="form-wrapper">
+									<div class="form-container">
+										<h1>Login</h1>
+										<form id="login" novalidate>							
+											<input id="email" type="email" placeholder="Email">
+											<input id="password" type="password" placeholder="Password">
+											<input type="checkbox" class="check"><span>Remember Me</span>
+											<div class="reset-pw"><a href="#">Forgot password?</a></div>
+											<input type="submit" value="LOGIN" class="submit">
+										</form>
+									</div>
+								</div>
+							</div>
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow">keyboard_arrow_left</i>
+							<i class="material-icons next arrow">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot" data-slide="slide-1"></span>
+							    <span class="dot" data-slide="slide-2"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> This log-in form is validated to ensure only emails are accepted.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+						       	<span><a href="">View Demo and Source</a></span>
+					      	</section>    
+				      	</div>
+					</div>
+	      		</section>
+	      		
+	      		<label id="2" class="mobile">Calculator</label>
+	      		<section data-num="2" class="tab-content">
+	        		<div class="slider-wrapper">
+					  	<div class="slider">
+					   		<!--Slide 1: Image-->
+					   		<div class="proj2slide active" id="slide-1">
+					    		<div class="img">
+						   			<img src="images/calculator.png" class="active">
+					     		</div>
+				      		</div>
+						    <!--Slide 2: Demo-->
+						    <div class="proj2slide" id="slide-2">
+						    	<div class="calc-wrapper">
+								  	<div class="container">
+									  	<form>
+										 	<input id="screen" type="text" class="screen">
+									  	</form>
+
+										<section class="buttons">
+											<div class="row-1">
+									      	<div id="settings" class="button">
+									      		<i class="material-icons">settings</i>
+									      	</div>
+											<div id="del" class="button">DEL</div>
+											<div id="clear" class="button">CLEAR</div>
+												<aside id="divide" class="button">&divide;</aside>
+											</div>
+											<div>
+												<div id="percent" class="button" onclick="calculatePercentage()">&#37;
+												</div>
+												<div id="openingPara" class="button">(</div>
+												<div id="closingPara" class="button">)</div>
+												<aside id="multiply" class="button">&#215;</aside>
+
+												<div id="num7" class="button">7</div>
+												<div id="num8" class="button">8</div>
+												<div id="num9" class="button">9</div>
+												<aside id="minus" class="button">-</aside>
+
+												<div id="num4" class="button">4</div>
+												<div id="num5" class="button">5</div>
+												<div id="num6" class="button">6</div>
+												<aside id="plus" class="button">+</aside>
+
+												<div id="num1" class="button">1</div>
+												<div id="num2" class="button">2</div>
+												<div id="num3" class="button">3</div>
+												<aside id="calc" class="button-eq">=</aside>
+
+												<div class="bottom-row">
+													<div id="num0" class="button-2">0</div>
+													<div id="decimal" class="button-3">.</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+							
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow2">keyboard_arrow_left</i>
+							<i class="material-icons next arrow2">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot-2" data-slide2="slide-1"></span>
+							    <span class="dot-2" data-slide2="slide-2"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> For this project, I used an existing calculator app as a design source and made the calculator functional with Javscript. This was done early on in the course, so if I were to redo it, there would just be one Event Listener for all the buttons to reduce code.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+					       		<span><a href="">View Demo and Source</a></span>
+					      	</section>   
+					    </div> 
+			      	</div>
+	      		</section>
+	      
+	      		<label id="3" class="mobile">Shopping Cart</label>
+	      		<section data-num="3" class="tab-content">
+	        		<div class="slider-wrapper">
+  						<div class="slider">
+			    			<!--Slide 1: Image-->
+			    			<div class="proj3slide active" id="slide-1">
+				    			<div class="img">
+					      			<img src="images/shopping-cart-items.png" class="active">
+					      		</div>
+				      		</div>
+				      		<!--Slide 2: Image-->
+			    			<div class="proj3slide" id="slide-2">
+				    			<div class="img">
+					      			<img src="images/shopping-cart-checkout.png">
+					      		</div>
+				      		</div>
+						    <!--Slide 3: Demo-->
+						    <div class="proj3slide" id="slide-3">
+							    <div class="cart-wrapper">
+									<section class="container">
+									<h1>Clothing</h1>
+									<!--Row 1-->
+										
+											<div id="1" class="product">
+												<div class="img"></div>
+												<h4 class="name">Tee</h4>
+												<h5>Comfiest t-shirt</h5>
+												<h5 class="price">$14.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('1')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="2" class="product">
+												<div class="img"></div>
+												<h4 class="name">Tank</h4>
+												<h5>Loose tank</h5>
+												<h5 class="price">$10.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('2')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="3"class="product">
+												<div class="img"></div>
+												<h4 class="name">Sweater</h4>
+												<h5>Comfiest sweater</h5>
+												<h5 class="price">$19.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('3')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="4" class="product">
+												<div class="img"></div>
+												<h4 class="name">Skirt</h4>
+												<h5>Circle Skirt</h5>
+												<h5 class="price">$16.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('4')">add</span></a>
+													</div>
+												</form>
+											</div>
+										
+
+									<!--Row 2-->
+										
+											<div id="5" class="product">
+												<div class="img"></div>
+												<h4 class="name">Jean</h4>
+												<h5>Jeggings</h5>
+												<h5 class="price">$24.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('5')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="6" class="product">
+												<div class="img"></div>
+												<h4 class="name">Pant</h4>
+												<h5>Work slacks</h5>
+												<h5 class="price">$27.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('6')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="7" class="product">
+												<div class="img"></div>
+												<h4 class="name">Dress</h4>
+												<h5>Formal dress</h5>
+												<h5 class="price">$45.00</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('7')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="8" class="product">
+												<div class="img"></div>
+												<h4 class="name">Shoe</h4>
+												<h5>Casual sneaker</h5>
+												<h5 class="price">$15.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('8')">add</span></a>
+													</div>
+												</form>
+											</div>
+										
+									<!--Row 3-->
+										
+											<div id="9"class="product">
+												<div class="img"></div>
+												<h4 class="name">Scarf</h4>
+												<h5>Fall Scarf</h5>
+												<h5 class="price">$8.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('9')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="10" class="product">
+												<div class="img"></div>
+												<h4 class="name">Scarf</h4>
+												<h5>Winter Scarf</h5>
+												<h5 class="price">$29.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('10')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="11" class="product">
+												<div class="img"></div>
+												<h4 class="name">Purse</h4>
+												<h5>Black messenger bag</h5>
+												<h5 class="price">$34.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('11')">add</span></a>
+													</div>
+												</form>
+											</div>
+											<div id="12" class="product">
+												<div class="img"></div>
+												<h4 class="name">Sunglass</h4>
+												<h5>Aviator style</h5>
+												<h5 class="price">$8.99</h5>
+												<form>
+													<input type="text" class="box quantity" value="0"><span class="qty">Qty</span>
+													<div class="add"><a href="#cart-section"><span class="material-icons" onclick="add('12');">add</span></a>
+													</div>
+												</form>
+											</div>
+										
+										<div class="checkout">
+											<div id="cart-on-page" class="items"></div><div class="cart"><span class="material-icons">shopping_cart</span></div>
+											<a href="#cart-section"><button id="show-cart" class="check">Show Cart</button></a>
+										</div>
+
+									</section>
+
+									<!--Shopping Cart section-->
+									<div id="shopping-cart" class="hide">
+										<button class="checkout-btn">Checkout</button>
+										<div class="cart-content">
+											<h1 id="cart-section">Shopping Cart</h1>
+											<div class="img-col" id="img-col"></div>
+											<div id="shopping-cart-total-price"></div>
+											<div id="item-total"></div>
+											<div class="total">Total</div>
+											<div class="total-qty" id="total-qty"></div>
+											<div id="shopping-cart-total" class="total-price"></div>
+											<form class="promo">
+												<span>Promo Code</span><br>
+												<input id="promo" type="text">
+												<input id="promo-submit" type="submit" class="submit" value="Use" onclick="applyPromo();">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow3">keyboard_arrow_left</i>
+							<i class="material-icons next arrow3">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot-3" data-slide3="slide-1"></span>
+							    <span class="dot-3" data-slide3="slide-2"></span>
+							    <span class="dot-3" data-slide3="slide-3"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> When products are added to cart, the shopping cart automatically opens at the bottom, showing the items, quantity and total. Three promo codes are accepted: TANKS16, ACCESS16 and 5PERCENT. When more than one promo code is entered, the promo with the greatest discount is applied.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+						       	<span><a href="">View Demo and Source</a></span>
+					      	</section>    
+				      	</div>
+					</div>
+	      		</section>
+	      
+	      		<label id="4" class="mobile">Tab</label>
+	      		<section data-num="4" class="tab-content">
+	        		<div class="slider-wrapper">
+  						<div class="slider">
+			    			<!--Slide 1: Image-->
+			    			<div class="proj4slide active" id="slide-1">
+				    			<div class="img">
+					      			<img src="images/tabs.png" class="active">
+					      		</div>
+				      		</div>
+			    			<!--Slide 2: Image-->
+			    			<div class="proj4slide" id="slide-2">
+				    			<div class="img small">
+					      			<img src="images/tabs-mobile.png">
+					      		</div>
+				      		</div>				      		
+						    <!--Slide 3: Demo-->
+						    <div class="proj4slide" id="slide-3">
+						    	<div class="tab-wrapper">
+									<div class="tabComponent">
+									  <label>Home Decor</label>
+									  <section><p>Browse through our list of Home Decor items</p></section>
+									  
+									  <label>Furniture</label>
+									  <section><p>Flash sale on Living Room and Bedroom Furniture</p></section>
+									  
+									  <label>Kitchen</label>
+									  <section><p>Bring the best out of the master chef in you!</p></section>
+									  
+									  <label>Clearance</label>
+									  <section><p>Red hot deals at affordable prices. Check out our clearance section for more details.</p>
+									  </section>
+									</div>
+								</div>
+							</div>
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow4">keyboard_arrow_left</i>
+							<i class="material-icons next arrow4">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot-4" data-slide4="slide-1"></span>
+							    <span class="dot-4" data-slide4="slide-2"></span>
+							    <span class="dot-4" data-slide4="slide-3"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> This tab is responsive, becoming a collapsible accordion in mobile view.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+						       	<span><a href="">View Demo and Source</a></span>
+					      	</section>    
+				      	</div>
+					</div>
+	      		</section>
+	      
+	      		<label id="5" class="mobile">Accordion</label>
+	      		<section data-num="5" class="tab-content">
+	        		<div class="slider-wrapper">
+  						<div class="slider">
+			    			<!--Slide 1: Image-->
+			    			<div class="proj5slide active" id="slide-1">
+				    			<div class="img">
+					      			<img src="images/accordion.png" class="active">
+					      		</div>
+				      		</div>				      		
+						    <!--Slide 2: Demo-->
+						    <div class="proj5slide" id="slide-2">
+						    	<div class="accordion_proj-wrapper">
+									<div class="accordion">
+									  	<ul id="accordion_proj-label">
+										    <!-- Item 1 -->
+										    <li>
+										      <label class="accordion-label">Appetizers</label>
+										      <section>
+										        <h1>
+										          Check out our tasty apps!
+										      </h1>
+										      <h2>
+										        Happy hour menu - half off!
+										      </h2>
+										      <p>
+										        Chicken Wings (6) - 5.99$
+										      </p>
+										      <p>
+										        Calamari - 7.99$
+										      </p>
+										      <p>
+										        Garlic Breaded Pickles - 4.59$
+										      </p>
+										      </section>
+										    </li>
+
+										    <!-- Item 2 -->
+										    <li>
+										      <label for="entrees" class="accordion-label">Entrees</label>
+										      <section>
+										        <h1>Choose from a wide range of pastas, combos and signature dishes</h1>
+										        <h2>Pastas</h2>
+										        <p>Checken Picatta - 14.99$</p>
+										        <p>Chicken Pollo - 12.99$</p>
+										        <p>Lasagna (Checken/beef) - 10.99$</p>
+
+										        <h2>Combos</h2>
+										  
+										        <p>Italian Sausage & Beef Combo 15.99$</p>
+										        <p>Mac n Cheese with Chicken Tenders - 8.99$</p>
+										      </section>
+										    </li>
+
+										    <!-- Item 3 -->
+										    <li>
+										      <label for="desserts" class="accordion-label">Desserts</label>
+										      <section>
+										        <h1>New Summer specials!!</h1>
+
+										        <h2>Shakes and Ice Creams</h2>
+
+										        <p>Turtle Caramel Shake - 6.99$</p>
+										        <p>Chocolate Brownie Bite - 4.99$</p>
+										      </section>
+										    </li>
+										    <li>
+										      <label for="soups" class="accordion-label">Soups & Salads</label>
+										      <section class="accordion-section">
+										        <h1>Soups and salads comes with free breadstick</h1>
+										        <h2>Soups</h2>
+										        <p>Clam Chowder - 6.99$</p>
+										        <p>White Chilli - 4.99$<p>
+										        <p>Roasted Butternut Squash - 5.99$</p>
+										        <h2>Salads</h2>
+										        <p>Chicken Cobb Salad - 7.99$</p>
+										        <p>Steak Spring Mix - 9.99$</p>
+										      </section>
+										    </li>  
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow5">keyboard_arrow_left</i>
+							<i class="material-icons next arrow5">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot-5" data-slide5="slide-1"></span>
+							    <span class="dot-5" data-slide5="slide-2"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> This accordion was built based on a design Bov Academy provided. The focus wasn't on a good UI but on building the interactive aspect of accordion with Javascript.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+						       	<span><a href="">View Demo and Source</a></span>
+					      	</section>    
+				      	</div>
+					</div>
+	      		</section>
+	      
+	      		<label id="6" class="mobile">Image Carousel</label>
+	      		<section data-num="6" class="tab-content">
+	        		<div class="slider-wrapper">
+  						<div class="slider">
+			    			<!--Slide 1: Image-->
+			    			<div class="proj6slide active" id="slide-1">
+				    			<div class="img">
+					      			<img src="images/carousel.png" class="active">
+					      		</div>
+				      		</div>				      		
+						    <!--Slide 2: Image-->
+						    <div class="proj6slide" id="slide-2">
+						    	<div class="img">
+					      			<img src="images/carousel-mobile.png">
+					      		</div>
+							</div>
+							<!--Slide 3: Demo-->
+						    <div class="proj6slide" id="slide-3">
+						    	<div class="gallery-wrapper">
+									<div class="container">
+									    <!-- Thumbnails at the top -->
+									    <img data-number="image-1" class="thumbnail" src="images/lights-clouds-dark-car.jpg">
+									   	<img data-number="image-2" class="thumbnail" src="images/lights-clouds-dark-car-2.jpg">
+									   	<img data-number="image-3" class="thumbnail" src="images/lights-clouds-dark-car-3.jpg">
+									  	<img data-number="image-4" class="thumbnail" src="images/lights-clouds-dark-car-4.jpg">
+									  	<!-- Thumbnail for 5th image -->
+
+									  
+									  	<!-- HTML Code for Images linked to the thumbnails -->
+									  
+									  	<div class="display">
+									    	<!--Default 1st image-->
+									    	<img class="active-class" id="image-1" src="images/lights-clouds-dark-car.jpg">
+									    	<img id="image-2" src="images/lights-clouds-dark-car-2.jpg">  
+									    	<img id="image-3" src="images/lights-clouds-dark-car-3.jpg">
+									    	<img id="image-4" src="imagesb/lights-clouds-dark-car-4.jpg">
+									  	</div>
+									    <!-- Placeholder for 5th image -->
+									</div>
+
+									<div class="mobile-nav">
+									 	<span class="indicator" data-indicator="image-1"></span>
+									  	<span class="indicator" data-indicator="image-2"></span>
+									  	<span class="indicator" data-indicator="image-3"></span>
+									  	<span class="indicator" data-indicator="image-4"></span>
+									</div>
+								</div>
+							</div>
+							<!--Arrow Nav-->
+							<i class="material-icons prev arrow6">keyboard_arrow_left</i>
+							<i class="material-icons next arrow6">keyboard_arrow_right</i>
+						    <!--Circle Nav-->
+							<div class="circle-nav">
+							   	<span class="dot-6" data-slide6="slide-1"></span>
+							    <span class="dot-6" data-slide6="slide-2"></span>
+							    <span class="dot-6" data-slide6="slide-3"></span>
+						    </div>
+							<section class="content">
+							   	<p><strong>About the project:</strong> Slide through the images using the thumbnails. On mobile and tablet, the thumbnails disappear and users can use the indicators instead, showing more of the image on display.</p>
+							   	<p><strong>Technologies:</strong> HTML, CSS, Javscript</p>
+						       	<span><a href="">View Demo and Source</a></span>
+					      	</section>    
+				      	</div>
+					</div>
+	      		</section>
+       
+  			</div>
+		</div>
+	</section>
+	<!--Skills-->
+	<section id="skills" class="container">
+		<h3>Skills</h3>
+		<div class="col-1">
+			<h4>Front-End</h4>
+			<div class="bar-chart-1-wrapper">
+				<div class="chart-container">
+  					<div class="x-axis"></div>
+					<div class="y-axis">
+  						<div class="y-axis-label">
+    						<label>Expert</label>   
+    						<label>Proficient</label> 
+    						<label>Competent</label> 
+    						<label>Learning</label> 
+						</div>
+					</div>
+					<div class="bar-1" style="cursor: help;" data-tooltip="Been using this for years"></div>
+					<div class="bar-2" style="cursor: help;" data-tooltip="Got the basics down"></div>
+					<div class="bar-3" style="cursor: help;" data-tooltip="Learning soon"></div>
+					<div class="bar-4" style="cursor: help;" data-tooltip="Some experience with it"></div>
+					<div class="bar-5"style="cursor: help;" data-tooltip="Learning soon"></div>
+					<div class="x-axis-label">
+  						<label>HTML/CSS</label>
+  						<label>Javascript</label>
+  						<label>SASS</label>
+  						<label>Bootstrap</label>
+  						<label>React</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<h4>Other</h4>
+			<div class="bar-chart-2-wrapper">
+				<div class="chart-container">
+  					<div class="x-axis"></div>
+					<div class="y-axis">
+  						<div class="y-axis-label">
+    						<label>Expert</label>   
+    						<label>Proficient</label> 
+    						<label>Competent</label> 
+    						<label>Learning</label> 
+						</div>
+					</div>
+					<div class="bar-1" style="cursor: help;" data-tooltip="Been using this for years"></div>
+					<div class="bar-2" style="cursor: help;" data-tooltip="Got the basics down"></div>
+					<div class="bar-3" style="cursor: help;" data-tooltip="Learning soon"></div>
+					<div class="bar-4" style="cursor: help;" data-tooltip="Some experience with it"></div>
+					<div class="bar-5"style="cursor: help;" data-tooltip="Learning soon"></div>
+					<div class="x-axis-label">
+  						<label>Digital Marketing</label>
+  						<label>Wordpress</label>
+  						<label>AEM</label>
+  						<label>Photoshop</label>
+  						<label>Google Analytics</label>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!--Contact-->
+	<section id="contact" class="container">
+		<h3>Contact</h3>
+		<div class="col-1">
+			<center><p>For job opportunities, you can reach me via <a href="https://www.linkedin.com/in/mai-xiong-5440182b/">LinkedIn</a>.</p></center>
+		</div>
+		<div class="col-2">
+			<center><p>To work together on projects, email me at <a href="mailto:mai@owlcreativesolutions.com">mai@owlcreativesolutions.com</a>.</p></center>
+		</div>
+	</section>
+	<footer>
+		&copy; 2018 Mai Xiong
+	</footer>
+	<script type="text/javascript" src="project-accordion.js"></script>		
+	<script type="text/javascript" src="validator.js"></script>
+	<script type="text/javascript" src="login.js"></script>
+	<script type="text/javascript" src="proj-one-slider.js"></script>
+	<script type="text/javascript" src="proj-two-slider.js"></script>
+	<script type="text/javascript" src="proj-three-slider.js"></script>
+	<script type="text/javascript" src="proj-four-slider.js"></script>
+	<script type="text/javascript" src="proj-five-slider.js"></script>
+	<script type="text/javascript" src="proj-six-slider.js"></script>
+	<script type="text/javascript" src="calc.js"></script>
+	<script type="text/javascript" src="product-listing.js"></script>
+	<script type="text/javascript" src="tab.js"></script>
+	<script type="text/javascript" src="accordion-component.js"></script>
+	<script type="text/javascript" src="image-slider.js"></script>
+</body>
+</html>
