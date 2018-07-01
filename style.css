@@ -126,6 +126,18 @@ nav ul {
 	align-items: center;
 }
 
+.nav-items input {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #c2c2c2;
+}
+
+.nav-items input[type="submit"] {
+	border-bottom: none;
+	margin-left: 5%;
+}
+
 li {
 	list-style-type: none;
 }
