@@ -100,18 +100,7 @@ nav {
 	overflow: hidden;
 	padding: 15px 0;
 }
-/*
-nav .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-}
 
-nav ul {
-	display: flex;
-	flex-direction: row;
-}
-*/
 .nav-items {
 	display: flex;
 	justify-content: flex-end;
