@@ -87,7 +87,7 @@ h3 {
 }
 
 section p.subtitle, section.content p, #contact p {
-	text-align: center;
+	text-align: left;
 	font-family: 'Quicksand', sans-serif;
 	padding-bottom: 5vh;
 }
