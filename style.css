@@ -120,6 +120,22 @@ nav {
 	border-left: none;
 	border-right: none;
 	border-bottom: 1px solid #c2c2c2;
+	position: relative;
+}
+
+.nav-items .placeholder {
+	position: absolute;
+	color: #a7a7a7;
+}
+
+.nav-items input:focus ~ .placeholder {
+	transform: translateY(-15px);
+	transition: transform 200ms ease-out;
+}
+
+.nav-items input:not(:focus) ~ .placeholder {
+	transform: translateY(0px);
+	transition: transform 200ms ease-out;
 }
 
 .nav-items input[type="submit"] {
