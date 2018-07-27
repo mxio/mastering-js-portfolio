@@ -10,7 +10,7 @@
 	<meta property="og:image" content="images/portfolio.png" />
 </head>
 <body>
-
+	<div class="modal-container"></div>
 	<nav>
 		<div class="container">
 			<i class="material-icons menu">
@@ -24,7 +24,7 @@
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
-				<form>
+				<form id="search-form">
 					<input type="text" name="search">
 					<label class="placeholder">Search</label>
 					<input type="submit" class="material-icons" value="search">
@@ -32,6 +32,10 @@
 			</div>
 		</div>
 	</nav>
+	<!--Modal-->
+	<div class="modal">
+		Text here
+	</div>
 	<!--About-->
 	<header id="about">
 		<div class="container">
@@ -693,5 +697,6 @@
 	<script type="text/javascript" src="tab.js"></script>
 	<script type="text/javascript" src="accordion-component.js"></script>
 	<script type="text/javascript" src="image-slider.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
 </body>
 </html>
