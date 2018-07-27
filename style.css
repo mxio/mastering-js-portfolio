@@ -121,6 +121,7 @@ nav {
 	border-right: none;
 	border-bottom: 1px solid #c2c2c2;
 	position: relative;
+	background-color: transparent;
 }
 
 .nav-items .placeholder {
@@ -141,6 +142,13 @@ nav {
 .nav-items input[type="submit"] {
 	border-bottom: none;
 	margin-left: 5%;
+}
+
+.material-icons.menu {
+	display: none;
+	float: left;
+	margin-left: -10%;
+	color: #FF5567;
 }
 
 li {

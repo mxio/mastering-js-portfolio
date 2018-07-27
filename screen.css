@@ -5,12 +5,12 @@
 		margin: auto;
 	}
 	
-	nav .container {
+	/*nav .container {
     	display: flex;
     	flex-flow: column;
     	align-content: center;
     	width: 100%;
-	}
+	}*/
 
 	ul {
 		display: inline-block;
@@ -92,10 +92,10 @@
 @media (min-width: 320px) and (max-width: 600px) {
 	.logo {
     	display: inline-block;
-		font-size: 30px;
+		font-size: 2em;
 		margin: auto;
 	}
-
+/*
 	nav {
 		background-color: #fff;
 		height: auto;
@@ -134,7 +134,7 @@
 		color: #fff;
 		transition: none;
 	}
-
+*/
 	#about h1 {
  	   	font-size: 5em;
 	}
@@ -768,5 +768,42 @@
 	    position: relative;
 		left: 270px;
 		top: -83px;
+	}
+}
+
+/* Nav */
+@media (max-width: 320px) {
+	.nav-items ul {
+		display: none;
+	}
+
+	.material-icons.menu {
+		display: inline-block;
+	    font-size: 42px;
+	    margin-top: -8px;
+	}
+
+	label[class="placeholder"], input[name="search"] {
+    	display: none;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+	.nav-items ul {
+		display: none;
+	}
+
+	.material-icons.menu {
+		display: inline-block;
+		font-size: 54px;
+		margin-top: -10px;
+	}
+
+	label[class="placeholder"], input[name="search"] {
+    	display: none;
+	}
+
+	input[class="material-icons"] {
+		display: block;
 	}
 }
