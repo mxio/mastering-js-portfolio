@@ -10,7 +10,6 @@
 	<meta property="og:image" content="images/portfolio.png" />
 </head>
 <body>
-	<div class="modal-container"></div>
 	<nav>
 		<div class="container">
 			<i class="material-icons menu">
@@ -25,7 +24,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<form id="search-form">
-					<input type="text" name="search">
+					<input id="search-form-input" type="text" name="search">
 					<label class="placeholder">Search</label>
 					<input type="submit" class="material-icons" value="search">
 				</form>
@@ -33,9 +32,12 @@
 		</div>
 	</nav>
 	<!--Modal-->
+	<div class="modal-container"></div>
 	<div class="modal">
-		Text here
+		<p>Search temporarily disabled.</p>
+		<span id="close">X</span>
 	</div>
+
 	<!--About-->
 	<header id="about">
 		<div class="container">

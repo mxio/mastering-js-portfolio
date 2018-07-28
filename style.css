@@ -86,7 +86,7 @@ h3 {
 	font-size: 2em;
 }
 
-section p.subtitle, section.content p, #contact p {
+section p.subtitle, section.content p, #contact p, .modal p, .modal span {
 	text-align: left;
 	font-family: 'Quicksand', sans-serif;
 	padding-bottom: 5vh;
@@ -132,6 +132,10 @@ nav {
 .nav-items input:focus ~ .placeholder {
 	transform: translateY(-15px);
 	transition: transform 200ms ease-out;
+}
+
+.placeholder-active {
+	transform: translateY(-15px) !important;
 }
 
 .nav-items input:not(:focus) ~ .placeholder {
@@ -199,21 +203,24 @@ li a:hover {
 
 .modal {
   width: 50%;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 25%;
+  transform: scale(0.0);
   background-color: white;
+  border-radius: 5px;
   padding: 25px;
   opacity: 0;
-  pointer-events: none;
   z-index: 3;
   visibility: hidden;
+  transition: all 300ms cubic-bezier(1,0,0,1);
 }
 
 .modal.clicked {
 	opacity: 1;
 	visibility: visible;
+	transform: scale(1.1);
+	transition: transform 300ms cubic-bezier(1,0,0,1);
 }
 
 #about {
