@@ -92,6 +92,10 @@ section p.subtitle, section.content p, #contact p, .modal p, .modal span {
 	padding-bottom: 5vh;
 }
 
+#contact p {
+	text-align: center;
+}
+
 /**Elements**/
 
 nav {
