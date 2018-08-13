@@ -86,7 +86,7 @@ h3 {
 	font-size: 2em;
 }
 
-section p.subtitle, section.content p, #contact p, .modal p, .modal span, #close-menu span {
+section p.subtitle, section.content p, #contact p, .modal p, .modal span, #close-menu span, #mobile-menu-footer span {
 	text-align: left;
 	font-family: 'Quicksand', sans-serif;
 	padding-bottom: 5vh;
@@ -1440,4 +1440,10 @@ position: fixed;
 	background-color: transparent;
 	padding: 0;
 	color: #FF5567;
+}
+
+#mobile-menu-footer {
+	padding: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0;
 }
