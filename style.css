@@ -1402,6 +1402,15 @@ i.next {
 #site-wrapper.show-nav #site-canvas {
 	transform: translateX(60%);
 	-webkit-transform: translateX(60%);
+	top: 0;
+
+bottom: 0;
+
+left: 0;
+
+right: 0;
+
+position: fixed;
 }
 
 .show-nav {
@@ -1416,4 +1425,19 @@ i.next {
 #mobile-menu .logo {
 	float: left;
 	padding: 20px 0 0 20px;
+}
+
+#mobile-menu ul {
+    clear: both;
+    padding: 20px;
+}
+
+#mobile-menu li {
+	padding: 10px 0 10px 0;
+}
+
+#mobile-menu li a:hover {
+	background-color: transparent;
+	padding: 0;
+	color: #FF5567;
 }
