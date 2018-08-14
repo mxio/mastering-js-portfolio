@@ -30,7 +30,7 @@
 
 	function scrollToProj() {
 		for (var i = 0; i < section.length; i++) {
-			// desktop view
+			// desktop view, display the section first, then scroll after
 			for (var b = 0; b < tab.length; b++) {
     			if (section[i].classList.contains('display')) {
     				// Remove transition for previous open tab, until after scroll
