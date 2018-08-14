@@ -40,15 +40,14 @@
 					<span class="logo">MXIO</span>
 					<ul>
 						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-							<ul>
-								<label for="proj-1"><a href="#1">Login Form</a></label>
-								<label ><a href="#slide-2">Calculator</a></label>
-								<label><a href="#3">Shopping Cart</a></label>
-								<label><a href="#4">Tab</a></label>
-								<label><a href="#5">Accordion</a></label>
-								<label><a href="#6">Image Carousel</a></label>
-							</ul>
+						<li><a href="#projects">Projects</a>
+								<label class="menu-link" for="proj-1" data-labelnum="1">Login Form</label>
+								<label class="menu-link" for="proj-2" data-labelnum="2">Calculator</label>
+								<label class="menu-link" for="proj-3" data-labelnum="3">Shopping Cart</label>
+								<label class="menu-link" for="proj-4" data-labelnum="4">Tab</label>
+								<label class="menu-link" for="proj-5" data-labelnum="5">Accordion</label>
+								<label class="menu-link" for="proj-6" data-labelnum="6">Image Carousel</label>
+							</li>
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -84,15 +83,15 @@
 		<div class="accordion-wrapper">
   			<div class="proj-accordion">
 				<div class="tab">
-      				<label id="1" class="portfolio">Login Form</label>
-      				<label id="2" class="portfolio">Calculator</label>
-      				<label id="3" class="portfolio">Shopping Cart</label>
-      				<label id="4" class="portfolio">Tab</label>
-      				<label id="5" class="portfolio">Accordion</label>
-      				<label id="6" class="portfolio">Image Carousel</label>
+      				<label data-desktoplabel="1" class="portfolio">Login Form</label>
+      				<label data-desktoplabel="2" class="portfolio">Calculator</label>
+      				<label data-desktoplabel="3" class="portfolio">Shopping Cart</label>
+      				<label data-desktoplabel="4" class="portfolio">Tab</label>
+      				<label data-desktoplabel="5" class="portfolio">Accordion</label>
+      				<label data-desktoplabel="6" class="portfolio">Image Carousel</label>
    			 	</div>
 	     
-	      		<label id="1" class="mobile">Login Form</label>
+	      		<label data-mobilelabel="1" class="mobile">Login Form</label>
 	      		<section data-num="1" class="tab-content">
 	        		<div class="slider-wrapper">
   						<div class="slider">
@@ -133,9 +132,8 @@
 				      	</div>
 					</div>
 	      		</section>
-	      		
-	      		<label id="2" class="mobile">Calculator</label>
-	      		<section data-num="2" class="tab-content">
+	      		<label data-mobilelabel="2" class="mobile">Calculator</label>
+	      		<section data-num="2" class="tab-content" id="calculator-tab">
 	        		<div class="slider-wrapper">
 					  	<div class="slider">
 					   		<!--Slide 1: Image-->
@@ -210,7 +208,7 @@
 			      	</div>
 	      		</section>
 	      
-	      		<label id="3" class="mobile">Shopping Cart</label>
+	      		<label data-mobilelabel="3" class="mobile">Shopping Cart</label>
 	      		<section data-num="3" class="tab-content">
 	        		<div class="slider-wrapper">
   						<div class="slider">
@@ -418,7 +416,7 @@
 					</div>
 	      		</section>
 	      
-	      		<label id="4" class="mobile">Tab</label>
+	      		<label data-mobilelabel="4" class="mobile">Tab</label>
 	      		<section data-num="4" class="tab-content">
 	        		<div class="slider-wrapper">
   						<div class="slider">
@@ -471,7 +469,7 @@
 					</div>
 	      		</section>
 	      
-	      		<label id="5" class="mobile">Accordion</label>
+	      		<label data-mobilelabel="5" class="mobile">Accordion</label>
 	      		<section data-num="5" class="tab-content">
 	        		<div class="slider-wrapper">
   						<div class="slider">
@@ -571,7 +569,7 @@
 					</div>
 	      		</section>
 	      
-	      		<label id="6" class="mobile">Image Carousel</label>
+	      		<label data-mobilelabel="6" class="mobile">Image Carousel</label>
 	      		<section data-num="6" class="tab-content">
 	        		<div class="slider-wrapper">
   						<div class="slider">

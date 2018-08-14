@@ -167,7 +167,7 @@ a {
 
 }
 
-li a {
+li a, #mobile-menu label {
 	text-decoration: none;
 	color: #FF5567;
 	height: 100%;
@@ -1446,4 +1446,9 @@ position: fixed;
 	padding: 0 0 20px 20px;
     position: absolute;
     bottom: 0;
+}
+
+#mobile-menu label {
+	display: block;
+	padding: 10px 0 10px 20px;
 }
