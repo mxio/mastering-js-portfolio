@@ -33,7 +33,7 @@ function displayContent() {
       }
     }
     //add display class on desktop 
-    if (this.dataset.desktoplabel === section[a].dataset.num) {
+    if (this.dataset.desktoplabel === section[a].dataset.num || this.dataset.mobilelabel === section[a].dataset.num) {
       this.classList.add('label-clicked');
       section[a].classList.add('display');  
     }
