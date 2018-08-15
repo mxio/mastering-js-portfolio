@@ -31,20 +31,20 @@
 	function scrollToProj() {
 		for (var i = 0; i < section.length; i++) {
 			// desktop view, display the section first, then scroll after
-			for (var b = 0; b < tab.length; b++) {
+			//for (var b = 0; b < tab.length; b++) {
     			if (section[i].classList.contains('display')) {
     				// Remove transition for previous open tab, until after scroll
     				section[i].classList.add('noTransition');  
     				section[i].classList.remove('display'); 
-       				tab[b].classList.remove('label-clicked');
+       				//tab[b].classList.remove('label-clicked');
      			}
-				if (this.dataset.labelnum === section[i].dataset.num) {
-					section[i].classList.add('display');
-				}
-				if (this.dataset.labelnum === tab[b].dataset.desktoplabel) {
-					tab[b].classList.add('label-clicked');
-				}
-			}
+				// if (this.dataset.labelnum === section[i].dataset.num) {
+				// 	section[i].classList.add('display');
+				// }
+				// if (this.dataset.labelnum === tab[b].dataset.desktoplabel) {
+				// 	tab[b].classList.add('label-clicked');
+				// }
+			//}
 			// mobile view
 			for (var c = 0; c < mobileLabel.length; c++) {
 				if (mobileLabel[c].classList.contains('label-clicked')) {
@@ -52,6 +52,7 @@
 				}
 				if (this.dataset.labelnum === mobileLabel[c].dataset.mobilelabel) {
 					mobileLabel[c].classList.add('label-clicked');
+					section[i].classList.add('noTransition'); 
 					mobileLabel[c].nextElementSibling.classList.add('display');
 				}
 			}
@@ -62,7 +63,7 @@
 				section[i].classList.add('noTransition');
 
 				section[i].previousElementSibling.scrollIntoView(true);
-				section[i].scrollIntoView(true);
+				//section[i].scrollIntoView(true);
 				//Add transition for all sections after the tab is scrolled into view
 				setTimeout(function(elem, orig) {
 					document.querySelectorAll('.proj-accordion section').forEach(function(item) {

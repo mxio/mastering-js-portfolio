@@ -757,7 +757,7 @@
 	}
 }
 
-@media (min-width: 320px) and (max-width: 650px) {
+@media (min-width: 320px) and (max-width: 600px) {
 	.nav-items ul {
 		display: none;
 	}
@@ -775,4 +775,14 @@
 	input[class="material-icons"] {
 		display: block;
 	}
+}
+
+@media (max-width: 650px) {
+  #search-form-input {
+    display: none;
+  }
+
+  label.placeholder {
+    display: none;
+  }
 }
