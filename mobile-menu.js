@@ -62,7 +62,7 @@
 				// Remove transition before scroll for current tab
 				section[i].classList.add('noTransition');
 
-				section[i].previousElementSibling.scrollIntoView(true);
+				section[i].previousElementSibling.scrollIntoView({behavior:'smooth'});
 				//section[i].scrollIntoView(true);
 				//Add transition for all sections after the tab is scrolled into view
 				setTimeout(function(elem, orig) {
@@ -74,4 +74,5 @@
 		}
 	}
 
+	document.getElementById('about').scrollIntoView({behavior: 'smooth'});
 })(window)

@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -167,7 +168,7 @@ a {
 
 }
 
-li a, #mobile-menu label {
+li a, #mobile-menu label[for="project-radio"], #mobile-menu li {
 	text-decoration: none;
 	color: #FF5567;
 	height: 100%;
@@ -1448,7 +1449,34 @@ position: fixed;
     bottom: 0;
 }
 
-#mobile-menu label {
-	display: block;
-	padding: 10px 0 10px 20px;
+.menu-link {
+    padding: 10px 0 10px 20px;
+   	text-decoration: none;
+	color: #FF5567;
+	width: 100%;
+	box-sizing: border-box;
+	align-self: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#projects {
+	scroll-behavior: smooth;
+}
+
+#mobile-menu input {
+	display: none;
+}
+
+#project-links {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s ease-in-out;
+	display: flex;
+	flex-flow: column;
+}
+
+#mobile-menu input[type="checkbox"]:checked + label + #project-links {
+	max-height: 300px;
+	height: auto;
+	transition: max-height 1s ease-in-out;
 }
