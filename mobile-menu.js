@@ -74,5 +74,6 @@
 		}
 	}
 
-	document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+	let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
 })(window)
