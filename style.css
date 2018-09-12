@@ -258,7 +258,7 @@ section:not(.slider-wrapper section), header {
 } 
 
 #contact {
-	padding-top: 100px;
+	padding-top: 400px;
 	height: 25vh;
 }
 
@@ -1119,252 +1119,6 @@ i.next {
   opacity: 1 !important;
 }
 
-/*Bar Chart 1*/
-.bar-chart-1-wrapper .chart-container {
-  height: 200px;
-  margin: 20px 100px;
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
-}
-
-.bar-chart-1-wrapper .x-axis {
-  width: 2px;
-  height: 150%;
-  background-color: black;
-  transform: translate(151px, 150px) rotate(90deg);
-}
-
-.bar-chart-1-wrapper .y-axis {
-  height: 200px;
-  background-color: black;
-  width: 1px;
-}
-
-.bar-chart-1-wrapper [class^="bar"] {
-  width: 30px;
-  margin: 0 15px;
-  border-radius: 3px;
-  opacity: .55;
-}
-
-.bar-chart-1-wrapper .bar-1 {
-  background-color: pink;
-  height: 90%;
-}
-
-.bar-chart-1-wrapper .bar-2 {
-  background-color: red;
-  height: 30%;
-}
-
-.bar-chart-1-wrapper .bar-3 {
-  background-color: yellow;
-  height: 5%;
-}
-
-.bar-chart-1-wrapper .bar-4 {
-  background-color: blue;
-  height: 10%;
-}
-
-.bar-chart-1-wrapper .bar-5 {
-  background-color: purple;
-  height: 5%;
-}
-
-.bar-chart-1-wrapper .y-axis-label label {
-  position: relative;
-  left: -10px;
-  float: right;
-  display: block;
-  margin-top: 30px;
-}
-
-.bar-chart-1-wrapper .y-axis-label label:nth-of-type(1) {
-  margin-top: 0;
-}
-
-.bar-chart-1-wrapper .x-axis-label {
-  position: relative;
-  left: -335px;
-  top: 130px;
-  float: left;
-}
-
-.bar-chart-1-wrapper .x-axis-label label{
-  display: block;
-  text-align: right;
-  transform: rotate(-45deg);
-}
-
-.bar-chart-1-wrapper .x-axis-label label:nth-of-type(1) {
-  position: relative;
-  left: 0px;
-  top: -10px;
-}
-
-.bar-chart-1-wrapper .x-axis-label label:nth-of-type(2) {
-  position: relative;
-  left: 60px;
-  top: -30px;
-}
-
-.bar-chart-1-wrapper .x-axis-label label:nth-of-type(3) {
-  position: relative;
-  left: 120px;
-  top: -40px;
-}
-
-.bar-chart-1-wrapper .x-axis-label label:nth-of-type(4) {
-  position: relative;
-  left: 180px;
-  top: -60px;
-}
-
-.bar-chart-1-wrapper .x-axis-label label:nth-of-type(5) {
-  position: relative;
-  left: 240px;
-  top: -80px;
-}
-
-
-.bar-chart-1-wrapper [data-tooltip]:hover:after {
-  color: white;
-  content:attr(data-tooltip);
-  background-color: black;
-  padding: 5px;
-  max-width: 300px;
-  position: absolute;
-  margin-top: -35px;
-}
-
-
-/*Bar Chart 2*/
-.bar-chart-2-wrapper .chart-container {
-  height: 200px;
-  margin: 20px 100px;
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
-}
-
-.bar-chart-2-wrapper .x-axis {
-  width: 2px;
-  height: 150%;
-  background-color: black;
-  transform: translate(151px, 150px) rotate(90deg);
-}
-
-.bar-chart-2-wrapper .y-axis {
-  height: 200px;
-  background-color: black;
-  width: 1px;
-}
-
-.bar-chart-2-wrapper [class^="bar"] {
-  width: 30px;
-  margin: 0 15px;
-  border-radius: 3px;
-  opacity: .55;
-}
-
-.bar-chart-2-wrapper .bar-1 {
-  background-color: pink;
-  height: 60%;
-}
-
-.bar-chart-2-wrapper .bar-2 {
-  background-color: red;
-  height: 70%;
-}
-
-.bar-chart-2-wrapper .bar-3 {
-  background-color: yellow;
-  height: 60%;
-}
-
-.bar-chart-2-wrapper .bar-4 {
-  background-color: blue;
-  height: 40%;
-}
-
-.bar-chart-2-wrapper .bar-5 {
-  background-color: purple;
-  height: 45%;
-}
-
-.bar-chart-2-wrapper .y-axis-label label {
-  position: relative;
-  left: -10px;
-  float: right;
-  display: block;
-  margin-top: 30px;
-}
-
-.bar-chart-2-wrapper .y-axis-label label:nth-of-type(1) {
-  margin-top: 0;
-}
-
-.bar-chart-2-wrapper .x-axis-label {
-  position: relative;
-  left: -335px;
-  top: 130px;
-  float: left;
-}
-
-.bar-chart-2-wrapper .x-axis-label label{
-  display: block;
-  text-align: right;
-  transform: rotate(-45deg);
-}
-
-.bar-chart-2-wrapper .x-axis-label label:nth-of-type(1) {
-  position: relative;
-  left: -35px;
-  top: 0px;
-}
-
-.bar-chart-2-wrapper .x-axis-label label:nth-of-type(2) {
-  position: relative;
-  left: 30px;
-  top: -15px;
-}
-
-.bar-chart-2-wrapper .x-axis-label label:nth-of-type(3) {
-  position: relative;
-  left: 90px;
-  top: -30px;
-}
-
-.bar-chart-2-wrapper .x-axis-label label:nth-of-type(4) {
-  position: relative;
-  left: 145px;
-  top: -50px;
-}
-
-.bar-chart-2-wrapper .x-axis-label label:nth-of-type(5) {
-  position: relative;
-  left: 205px;
-  top: -65px;
-}
-
-
-.bar-chart-2-wrapper [data-tooltip]:hover:after {
-  color: white;
-  content:attr(data-tooltip);
-  background-color: black;
-  padding: 5px;
-  max-width: 300px;
-  position: absolute;
-  margin-top: -35px;
-}
-
-.bar-chart-1-wrapper, .bar-chart-2-wrapper {
-    width: 90%;
-    margin: auto;
-}
-
 /* Mobile Menu */
 #site-wrapper {
 	position: absolute;
@@ -1479,4 +1233,253 @@ position: fixed;
 	max-height: 300px;
 	height: auto;
 	transition: max-height 1s ease-in-out;
+}
+
+/* Bar Chart 1 */
+
+.barchart-wrapper {
+  position: relative;
+  padding: 0 100px;
+}
+
+.barchart, .barchart-2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.x-axis-line {
+  width: 250px;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
+
+.y-axis-line {
+  height: 200px;
+  width: 2px;
+  background-color: #222;
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+}
+
+.x-axis-topic-1 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 55px;
+  float: left;
+  
+}
+
+.x-axis-topic-2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+}
+
+.x-axis-topic-3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 165px;
+}
+
+.x-axis-topic-4 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 235px;
+  display: inline-block;
+  float: right;
+}
+
+.x-axis-topic-5 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 285px;
+}
+
+[class|=x-axis] {
+  transform-origin: 80% 50%;
+}
+
+.y-axis-topic-1 {
+  position: absolute;
+  top: 50px;
+}
+
+.y-axis-topic-2 {
+  position: absolute;
+  top: 100px;
+}
+
+.y-axis-topic-3 {
+  position: absolute;
+  top: 150px;
+}
+
+.y-axis-topic-4 {
+  position: absolute;
+  top: 200px;
+}
+
+div[class*="bar-"] {
+  position: absolute;
+  width: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  opacity: .7;
+}
+
+.bar-1 {
+  bottom: 52px;
+  left: 110px;
+  background-color: red;
+  height: 150px;
+}
+
+.bar-2 {
+  bottom: 52px;
+  left: 158px;
+  background-color: pink;
+  height: 80px;
+}
+
+.bar-3 {
+  bottom: 52px;
+  left: 205px;
+  background-color: blue;
+  height: 30px;
+}
+
+.bar-4 {
+  bottom: 52px;
+  left: 253px;
+  background-color: yellow;
+  height: 10px;
+}
+
+.bar-5 {
+  bottom: 52px;
+  left: 310px;
+  background-color: orange;
+  height: 10px;
+}
+
+.barchart-wrapper [data-tooltip]:before {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -70px;
+  display: none;
+  border-radius: 3px;
+}
+
+.barchart-wrapper [data-tooltip]:after {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #222;
+  content: "";
+  position: absolute;
+  display: none;
+  top: -30px;
+  left: 20px;
+}
+
+.barchart-wrapper [data-tooltip]:hover:after,
+.barchart-wrapper [data-tooltip]:hover:before  {
+  display: block;
+  white-space: nowrap;
+}
+
+.bar-1:hover:after, .bar-2:hover:after, .bar-3:hover:after, .bar-4:hover:after, .bar-5:hover:after {
+  position: absolute;
+  top: -34px;
+}
+
+/* Bar Chart 2 */
+
+.barchart-2 .bar-1 {
+  bottom: 52px;
+  left: 110px;
+  background-color: red;
+  height: 90px;
+}
+
+.barchart-2 .bar-2 {
+  bottom: 52px;
+  left: 158px;
+  background-color: pink;
+  height: 40px;
+}
+
+.barchart-2 .bar-3 {
+  bottom: 52px;
+  left: 205px;
+  background-color: blue;
+  height: 90px;
+}
+
+.barchart-2 .bar-4 {
+  bottom: 52px;
+  left: 253px;
+  background-color: yellow;
+  height: 120px;
+}
+
+.barchart-2 .bar-5 {
+  bottom: 52px;
+  left: 310px;
+  background-color: orange;
+  height: 80px;
+}
+
+
+.barchart-2 .x-axis-topic-1 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  float: left;
+  
+}
+
+.barchart-2 .x-axis-topic-2 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 105px;
+}
+
+.barchart-2 .x-axis-topic-3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 110px;
+}
+
+.barchart-2 .x-axis-topic-4 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  display: inline-block;
+  float: right;
+}
+
+.barchart-2 .x-axis-topic-5 {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 0;
+  left: 285px;
 }

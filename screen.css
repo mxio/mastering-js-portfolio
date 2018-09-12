@@ -786,3 +786,15 @@
     display: none;
   }
 }
+
+/* Bar Chart */
+@media (max-width: 960px) {
+  #skills .col-1, #skills .col-2 {
+    height: 400px;
+    width: 100%;
+  }
+
+  .barchart-wrapper {
+    padding: 0;
+  }
+}
