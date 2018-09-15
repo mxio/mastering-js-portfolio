@@ -90,6 +90,10 @@
 	#contact p {
 		padding-bottom: 0;
 	}
+
+  #contact .col-1, #contact .col-2 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 600px) {
@@ -117,6 +121,16 @@
 	section p, label, .content span {
 		font-size: .9em; 
 	}
+
+  #contact .col-1, #contact .col-2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  #contact {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 960px) {
@@ -797,4 +811,14 @@
   .barchart-wrapper {
     padding: 0;
   }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+  .barchart-wrapper {
+    padding: 0 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  
 }
