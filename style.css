@@ -640,13 +640,13 @@ i.next {
 	box-sizing: border-box;
 	padding-top: 35px;
 }
-
+/*
 @supports (-webkit-appearance:none) {
     .calc-wrapper aside.button-eq {
         height: 97.5px;
     }
 } 
-
+*/
 .calc-wrapper .button:hover {
 	font-size: 18px;
 }
